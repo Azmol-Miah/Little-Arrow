@@ -1,0 +1,28 @@
+$font-color: #fff;
+$primary-color:#10a2c7;
+$dark-overlay:rgb(0,0,0,0.7);
+
+.navbar{
+    background-color: $primary-color;
+}
+
+body{
+    color:$font-color !important;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+    border: none; 
+}
+
+.btn-outline-light:hover {
+    color: $primary-color !important;
+    cursor: pointer;
+}
+
+#home {
+    background: url('../img/home.jpg') no-repeat center center;
+    min-height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+}

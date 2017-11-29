@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #10a2c7; }
+
+body {
+  color: #fff !important; }
+
+.bg-primary {
+  background-color: #10a2c7 !important;
+  border: none; }
+
+.btn-outline-light:hover {
+  color: #10a2c7 !important;
+  cursor: pointer; }
+
+#home {
+  background: url("../img/home.jpg") no-repeat center center;
+  min-height: 700px;
+  background-size: cover;
+  background-attachment: fixed; }
