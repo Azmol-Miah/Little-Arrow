@@ -84,3 +84,18 @@ body, .nav-link {
 #news-letter {
   background-color: #10a2c7;
 }
+
+/* Classes */
+#classes .box {
+  background-color: #fff;
+  color: #000;
+}
+
+#classes .box img {
+  width: 100%;
+  height:auto;
+}
+
+#classes .box .box-content {
+  padding: 0.5em;
+}

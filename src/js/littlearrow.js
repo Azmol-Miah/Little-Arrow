@@ -1,50 +1,50 @@
-function updateTimer(deadline){
-  var time = deadline - new Date();
-  return {
-    'days': Math.floor( time/(1000*60*60*24) ),
-    'hours': Math.floor( (time/(1000*60*60)) % 24 ),
-    'minutes': Math.floor( (time/1000/60) % 60 ),
-    'seconds': Math.floor( (time/1000) % 60 ),
-    'total' : time
-  };
+// Display if and when classes are in session
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow >= 9 && hourNow < 10) {
+    greeting = 'Class in Session';
+} else {
+    greeting = 'Class is at 6pm!';
 }
 
+var elGreeting1 = document.getElementById('class1');
+    elGreeting1.textContent = greeting;
 
-function animateClock(span){
-  span.className = "turn";
-  setTimeout(function(){
-    span.className = "";
-  },700);
+var elGreeting2 = document.getElementById('class2');
+    elGreeting2.textContent = greeting;
+
+var elGreeting3 = document.getElementById('class3');
+    elGreeting3.textContent = greeting;
+
+// Spaces left
+
+function Class (name, spaces, booked) {
+  this.name = name;
+  this.spaces = spaces;
+  this.booked = booked;
+
+  this.checkAvailabilty = function() {
+    return this.spaces - this.booked;
+  }
 }
 
-function startTimer(id, deadline){
-  var timerInterval = setInterval(function(){
-    var clock = document.getElementById(id);
-    var timer = updateTimer(deadline);
+var quranClass = new Class('Quran', 10, 6 );
+var hadeethClass = new Class('Hadeeth', 15, 10 );
+var fiqhClass = new Class('Fiqh', 20, 16 );
 
-    clock.innerHTML = '<span>' + timer.days + '</span>'
-                    + '<span>' + timer.hours + '</span>'
-                    + '<span>' + timer.minutes + '</span>'
-                    + '<span>' + timer.seconds + '</span>';
+var details1 = ' Spaces left: ';
+    details1 += quranClass.checkAvailabilty();
+var elClass1 = document.getElementById('quran');
+    elClass1.textContent = details1;
 
-    //animations
-    var spans = clock.getElementsByTagName("span");
-    animateClock(spans[3]);
-    if(timer.seconds == 59) animateClock(spans[2]);
-    if(timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
-    if(timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]);
+var details2 = ' Spaces left: ';
+    details2 += hadeethClass.checkAvailabilty();
+var elClass2 = document.getElementById('hadeeth');
+    elClass2.textContent = details2;
 
-    //check for end of timer
-    if(timer.total < 1){
-      clearInterval(timerInterval);
-      clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
-    }
-
-  }, 1000);
-}
-
-
-window.onload = function(){
-  var deadline = new Date("December 07, 2017 23:38:00");
-  startTimer("clock", deadline);
-};
+var details3 = ' Spaces left: ';
+    details3 += fiqhClass.checkAvailabilty();
+var elClass3 = document.getElementById('fiqh');
+    elClass3.textContent = details3;
