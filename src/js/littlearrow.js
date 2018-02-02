@@ -3,7 +3,7 @@ var today = new Date();
 var hourNow = today.getHours();
 var greeting;
 
-if (hourNow >= 9 && hourNow < 10) {
+if (hourNow >= 6 && hourNow < 7) {
     greeting = 'Class in Session';
 } else {
     greeting = 'Class is at 6pm!';

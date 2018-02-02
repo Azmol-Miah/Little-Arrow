@@ -7,7 +7,7 @@ body, .nav-link {
   color: #fff !important; }
 
 .bg-primary {
-  background-color: #10a2c7 !important;
+  background-color: #10a2c7b0 !important;
   border: none; }
 
 .btn-outline-light:hover {
@@ -36,9 +36,10 @@ body, .nav-link {
 
 /*Header*/
 #home {
-  background: url("../img/home.jpg") no-repeat center center;
-  min-height: 700px;
+  background: url("../img/home.jpg") no-repeat center;
+  height: 70vh;
   background-size: cover;
+  background-attachment: fixed;
  }
 
 .dark-overlay {
@@ -52,10 +53,6 @@ body, .nav-link {
 
 .home-inner {
   padding-top: 150px;
-}
-
-.card-form {
-  opacity: 0.9;
 }
 
 .fa{
@@ -86,9 +83,13 @@ body, .nav-link {
 }
 
 /* Classes */
+#classes h1 {
+  color: #10a2c7;
+}
+
 #classes .box {
-  background-color: #fff;
-  color: #000;
+  
+  color: #fff;
 }
 
 #classes .box img {
@@ -98,4 +99,16 @@ body, .nav-link {
 
 #classes .box .box-content {
   padding: 0.5em;
+  background-color: #10a2c7b0;
+}
+
+#classes .box-content h2 {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fff;
+}
+
+/* Contact */
+#contact {
+  background-color: #10a2c7;
 }
