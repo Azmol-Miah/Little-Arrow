@@ -1,22 +1,68 @@
 // Display if and when classes are in session
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
 
-if (hourNow >= 6 && hourNow < 7) {
-    greeting = 'Class in Session';
-} else {
-    greeting = 'Class is at 6pm!';
+
+// if (hourNow >= 6 && hourNow < 7) {
+//     greeting = 'Class in Session';
+// } else {
+//     greeting = 'Class is at 6pm!';
+// }
+
+// if (hourNow >= 7 && hourNow < 8) {
+//     greeting = 'Class in Session';
+// } else {
+//     greeting = 'Class is at 6pm!';
+// }
+
+// if (hourNow >= 8 && hourNow < 9) {
+//     greeting = 'Class in Session';
+// } else {
+//     greeting = 'Class is at 6pm!';
+// }
+
+// var elGreeting1 = document.getElementById('class1');
+//     elGreeting1.textContent = greeting;
+
+// var elGreeting2 = document.getElementById('class2');
+//     elGreeting2.textContent = greeting;
+
+// var elGreeting3 = document.getElementById('class3');
+//     elGreeting3.textContent = greeting;
+
+function Time (time1, time2, classtime){
+    this.time1 = time1;
+    this.time2 = time2;
+    this.classtime = classtime;
+
+    this.checkTime = function(){
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+        
+        if (hourNow >= this.time1 && hourNow < this.time2) {
+            greeting = 'Class in Session';
+        } else {
+            greeting = 'Class is at ' + this.classtime + ' !';
+        }
+    }    
+
 }
 
-var elGreeting1 = document.getElementById('class1');
-    elGreeting1.textContent = greeting;
+var qClass = new Time (6, 7, '6pm');
+var hClass = new Time (7, 8, '7pm');
+var fClass = new Time (11, 12, '8pm');
 
-var elGreeting2 = document.getElementById('class2');
-    elGreeting2.textContent = greeting;
+var qdetails = qClass.checkTime();
+var elQdetails = document.getElementById('class1');
+    elQdetails.textContent = qdetails;
 
-var elGreeting3 = document.getElementById('class3');
-    elGreeting3.textContent = greeting;
+var hdetails = hClass.checkTime();
+var elHdetails = document.getElementById('class2');
+    elHdetails.textContent = hdetails;
+
+var fdetails = fClass.checkTime();
+var elFdetails = document.getElementById('class3');
+    elFdetails.textContent = fdetails;
+
 
 // Spaces left
 
