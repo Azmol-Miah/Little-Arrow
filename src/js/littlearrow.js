@@ -2,19 +2,19 @@
 
 var classTime = [
     {
-        start: 6,
+        start:6,
         end:7,
-        message: '6pm',
+        message:'6pm',
     },
     {
         start: 7,
         end:8,
-        message: '7pm',
+        message:'7pm',
     },
     {
         start: 9,
         end:10,
-        message: '8pm',
+        message:'8pm',
     },
 ]
 
@@ -30,7 +30,15 @@ for (i = 0; i < classTime.length; i++) {
         greeting = console.log('Class starts at ' + classTime[i].message);
     }
     
+    // var elTime1 = document.getElementById('class1');
+    //     elTime1.textContent = greeting[0];
+    // var elTime2 = document.getElementById('class2');
+    //     elTime2.textContent = greeting[1];
+    // var elTime3 = document.getElementById('class3');
+    //     elTime3.textContent = greeting[2];
 }
+
+
 
 // Spaces left
 
