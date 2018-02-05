@@ -12,9 +12,9 @@ var classTime = [
         message:'7pm',
     },
     {
-        start: 9,
-        end:10,
-        message:'8pm',
+        start: 17,
+        end:18,
+        message:'18:00pm',
     },
 ]
 
@@ -22,20 +22,15 @@ var today = new Date();
 var hourNow = today.getHours();
 var greeting ;
 
+
 for (i = 0; i < classTime.length; i++) {
 
     if (hourNow >= classTime[i].start && hourNow < classTime[i].end) {
-        greeting = console.log('Class in Session');
+        greeting = 'Class in Session';
     } else {
-        greeting = console.log('Class starts at ' + classTime[i].message);
+        greeting = 'Class starts at ' + classTime[i].message;
     }
-    
-    // var elTime1 = document.getElementById('class1');
-    //     elTime1.textContent = greeting[0];
-    // var elTime2 = document.getElementById('class2');
-    //     elTime2.textContent = greeting[1];
-    // var elTime3 = document.getElementById('class3');
-    //     elTime3.textContent = greeting[2];
+
 }
 
 
