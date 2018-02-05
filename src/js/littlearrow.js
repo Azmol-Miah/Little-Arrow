@@ -2,8 +2,8 @@
 
 var classTime = [
     {
-        start:11,
-        end:12,
+        start:12,
+        end:13,
         message:'11am',
     },
     {
@@ -42,21 +42,24 @@ for (i = 0; i < classTime.length; i++) {
         
     } else {
 
+            if (classTime[i] == classTime[0]){
             var greeting1 = 'Class starts at ';
             var time11 = document.getElementById('class1');
                 greeting1 += classTime[0].message;
                 time11.textContent = greeting1;
 
+            } else if (classTime[i] == classTime[1]){
             var greeting2 = 'Class starts at ';
             var time22 = document.getElementById('class2');
                 greeting2 += classTime[1].message;
                 time22.textContent  = greeting2;
-            
+
+            } else if (classTime[i] == classTime[2]){
             var greeting3 = 'Class starts at ';
             var time33 = document.getElementById('class3');
                 greeting3 += classTime[2].message;
                 time33.textContent = greeting3;
-
+            }
     }
 
 }
