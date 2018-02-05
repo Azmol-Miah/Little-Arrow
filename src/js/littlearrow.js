@@ -2,13 +2,13 @@
 
 var classTime = [
     {
-        start:12,
-        end:13,
+        start:10,
+        end:11,
         message:'11am',
     },
     {
-        start: 7,
-        end:8,
+        start: 12,
+        end:13,
         message:'7pm',
     },
     {
