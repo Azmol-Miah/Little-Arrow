@@ -62,8 +62,6 @@ for (i = 0; i < classTime.length; i++) {
 
 }
 
-
-
 // Spaces left
 
 function Class (name, spaces, booked) {
@@ -95,4 +93,41 @@ var details3 = ' Spaces left: ';
 var elClass3 = document.getElementById('fiqh');
     elClass3.textContent = details3;
 
-// Scroll Nav
+// Smooth Scroll
+var marginY = 0;
+var destination = 0; //where to go
+var speed = 5; //speed of scroll
+var scroller = null;
+
+function initScroll(elementId){
+    destination = document.getElementById(elementId).offsetTop;//OffesetTop is the distance from the top
+
+    scroller = setTimeout(function(){
+        initScroll(elementId);
+    }, 1);
+
+    marginY = marginY + speed;
+
+    if(marginY >= destination){
+        clearTimeout(scroller);
+    }
+
+    window.scroll(0, marginY);
+    // console.log(destination);
+}
+
+function toTop(){
+
+    scroller = setTimeout(function(){
+        toTop();
+    }, 1);
+
+    marginY = marginY - speed;
+
+    if(marginY <= 0){
+        clearTimeout(scroller);
+    }
+
+    window.scroll(0, marginY);
+    // console.log(destination);
+}
