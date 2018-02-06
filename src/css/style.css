@@ -1,6 +1,7 @@
 /*Global*/
 .navbar {
   background-color: #10a2c7;
+  padding: 0;
 }
 
 body, .nav-link {
@@ -33,7 +34,19 @@ body, .nav-link {
     background-color: #10a2c7;
     border-color: #10a2c7;
 }
+/* Nav */
 
+a.nav-link:hover {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
+
+a.nav-link:active {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
 /*Header*/
 #home {
   background: linear-gradient(rgba(21, 22, 22, 0.45), rgba(21, 22, 22, 0.45)), url("../img/home.jpg") no-repeat center;

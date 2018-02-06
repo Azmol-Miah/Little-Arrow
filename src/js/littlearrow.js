@@ -94,3 +94,5 @@ var details3 = ' Spaces left: ';
     details3 += fiqhClass.checkAvailabilty();
 var elClass3 = document.getElementById('fiqh');
     elClass3.textContent = details3;
+
+// Scroll Nav
