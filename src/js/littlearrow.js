@@ -2,33 +2,62 @@
 
 var classTime = [
     {
-        start:6,
-        end:7,
-        message:'6pm',
+        start:10,
+        end:11,
+        message:'11am',
     },
     {
-        start: 7,
-        end:8,
+        start: 12,
+        end:13,
         message:'7pm',
     },
     {
-        start: 17,
-        end:18,
-        message:'18:00pm',
+        start: 8,
+        end:9,
+        message:'9pm',
     },
 ]
 
 var today = new Date();
 var hourNow = today.getHours();
-var greeting ;
-
 
 for (i = 0; i < classTime.length; i++) {
 
     if (hourNow >= classTime[i].start && hourNow < classTime[i].end) {
-        greeting = 'Class in Session';
+            
+        if (classTime[i] == classTime[0]){
+            var timeOne = document.getElementById('class1');
+                timeOne.textContent = 'Class in session';
+                
+        } else if (classTime[i] == classTime[1]){
+            var time112 = document.getElementById('class2');
+                time112.textContent = 'Class in session'; 
+                
+        } else if (classTime[i] == classTime[2]){
+            var time113 = document.getElementById('class3');
+                time113.textContent = 'Class in session'; 
+        }
+        
     } else {
-        greeting = 'Class starts at ' + classTime[i].message;
+
+        if (classTime[i] == classTime[0]){
+            var greeting1 = 'Class starts at ';
+            var time11 = document.getElementById('class1');
+            greeting1 += classTime[0].message;
+            time11.textContent = greeting1;
+
+        } else if (classTime[i] == classTime[1]){
+            var greeting2 = 'Class starts at ';
+            var time22 = document.getElementById('class2');
+                greeting2 += classTime[1].message;
+                time22.textContent  = greeting2;
+
+        } else if (classTime[i] == classTime[2]){
+            var greeting3 = 'Class starts at ';
+            var time33 = document.getElementById('class3');
+                greeting3 += classTime[2].message;
+                time33.textContent = greeting3;
+        }
     }
 
 }

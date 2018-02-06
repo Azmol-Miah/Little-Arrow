@@ -36,12 +36,11 @@ body, .nav-link {
 
 /*Header*/
 #home {
-  background: linear-gradient(rgba(21, 22, 22, 0.45), rgba(21, 22, 22, 0.45)), url(../img/home.jpg) no-repeat center;
+  background: linear-gradient(rgba(21, 22, 22, 0.45), rgba(21, 22, 22, 0.45)), url("../img/home.jpg") no-repeat center;
   height: 70vh;
   background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.801) !important;
  }
+
 
 .home-inner {
   padding-top: 150px;
@@ -75,6 +74,11 @@ body, .nav-link {
 }
 
 /* Classes */
+#classes {
+  background: linear-gradient(rgba(21, 22, 22, 0.555), rgba(21, 22, 22, 0.589)), url("../img/qurantwo.jpg") no-repeat center;
+  height: 70vh;
+  background-size: cover;
+}
 #classes h1 {
   color: #10a2c7;
 }
