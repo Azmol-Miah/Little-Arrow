@@ -99,7 +99,20 @@ var destination = 0; //where to go
 var speed = 5; //speed of scroll
 var scroller = null;
 
+// Get the container element
+var nav = document.getElementById("navContainer");
 
+// Get all nav link with class="nav-link" inside the container
+var navs = nav.getElementsByClassName("nav-link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < navs.length; i++) {
+    navs[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
 
 function initScroll(elementId){
     destination = document.getElementById(elementId).offsetTop;//OffesetTop is the distance from the top
@@ -116,21 +129,6 @@ function initScroll(elementId){
     }
 
     window.scroll(0, marginY);
-
-    // Get the container element
-var nav = document.getElementById("navContainer");
-
-// Get all nav link with class="nav-link" inside the container
-var navs = nav.getElementsByClassName("nav-link");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < navs.length; i++) {
-    navs[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
 }
 
 function toTop(){
@@ -143,12 +141,11 @@ function toTop(){
 
     if(marginY <= 0){
         clearTimeout(scroller);
+        // Remove all active classes
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
     }
 
     window.scroll(0, marginY);
 
-    // Remove all active classes
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-  
 }
