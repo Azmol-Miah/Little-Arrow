@@ -19,12 +19,12 @@ body, .nav-link {
   color: #10a2c7 !important;
   cursor: pointer; }
 
-  .btn-outline-dark {
+ .btn-outline-dark {
       color: #10a2c7;
       background-color: transparent;
       background-image: none;
       border-color: #10a2c7;
-  }
+ }
 
   .btn-outline-dark:hover {
       color: #fff;
@@ -38,6 +38,7 @@ body, .nav-link {
     background-color: #10a2c7;
     border-color: #10a2c7;
 }
+
 /* Nav */
 
 .nav-link:hover {
@@ -51,6 +52,11 @@ body, .nav-link {
   color: #10a2c7 !important;
   border: 0;
 }
+
+.transition {
+  transition: ease-out 30s;
+}
+
 /*Header*/
 #home {
   background: linear-gradient(rgba(21, 22, 22, 0.45), rgba(21, 22, 22, 0.45)), url("../img/home.jpg") no-repeat center;

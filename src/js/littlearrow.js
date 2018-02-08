@@ -141,7 +141,7 @@ function toTop(){
 
     if(marginY <= 0){
         clearTimeout(scroller);
-        // Remove all active classes
+        // Remove all active classes once at top
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
     }
