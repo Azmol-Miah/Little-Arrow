@@ -152,3 +152,38 @@ for (i = 0; i < classTime.length; i++) {
         window.scroll(0, marginY);
 
     }
+
+// Map............................................................................................
+    function initMap(){
+        //Map options
+        var options = {
+            zoom:17,
+            center:{lat:53.5417, lng:-2.1408}
+        }
+
+        //New map
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        //Icon Size
+        var icon = {
+            url: "img/logo.png", // url
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+
+        //Add marker
+        var marker = new google.maps.Marker({
+            position:{lat:53.5417, lng:-2.1408},
+            map:map,
+            icon:icon
+        });
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: '<h1 style="color:#10a2c7;">Little Arrow</h1><p style="color:#000;">90 Stock Lane, Oldham, OL9 9EY</p>'
+        });
+
+        marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+        });
+    }

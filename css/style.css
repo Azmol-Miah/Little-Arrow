@@ -131,3 +131,8 @@ body, .nav-link {
 #contact {
   background-color: #10a2c7;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
