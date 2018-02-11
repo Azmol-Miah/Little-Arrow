@@ -169,7 +169,7 @@ for (i = 0; i < classTime.length; i++) {
             url: "img/logo.png", // url
             scaledSize: new google.maps.Size(50, 50), // scaled size
             origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor
+            anchor: new google.maps.Point(30, 45) // anchor
         }
 
         //Add marker
