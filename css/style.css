@@ -4,10 +4,11 @@
   padding: 0;
 }
 
-section {
-  min-height: 100vh !important;
-  padding: 10% 0;
+a {
+  text-decoration: none!important;
 }
+
+
 
 body, .nav-link {
   color: #fff !important; }
@@ -97,6 +98,11 @@ body, .nav-link {
   background-color: #10a2c7;
 }
 
+#qa .actives {
+  background-color: #10a2c7;
+  color: #fff;
+}
+
 /* Classes */
 #classes {
   background: linear-gradient(rgba(21, 22, 22, 0.555), rgba(21, 22, 22, 0.589)), url("../img/qurantwo.jpg") no-repeat center;
@@ -108,7 +114,8 @@ body, .nav-link {
 }
 
 #classes .box {
-  
+  width: 100%;
+  height:auto;
   color: #fff;
 }
 
@@ -129,7 +136,11 @@ body, .nav-link {
 
 /* Contact */
 #contact {
-  background-color: #10a2c7;
+  color: #000;
+}
+
+#contact h1 {
+  color: #10a2c7b0;
 }
 
 #map {
