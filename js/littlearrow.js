@@ -65,6 +65,7 @@ for (i = 0; i < classTime.length; i++) {
 // Spaces left.....................................
 
     function Class (name, spaces, booked) {
+<<<<<<< HEAD
         this.name = name;
         this.spaces = spaces;
         this.booked = booked;
@@ -72,6 +73,15 @@ for (i = 0; i < classTime.length; i++) {
         this.checkAvailabilty = function() {
             return this.spaces - this.booked;
         }
+=======
+    this.name = name;
+    this.spaces = spaces;
+    this.booked = booked;
+
+    this.checkAvailabilty = function() {
+        return this.spaces - this.booked;
+    }
+>>>>>>> dbc746c6c655e88db668cf9f5317af491aab4d15
     }
 
     var quranClass = new Class('Quran', 10, 6 );
@@ -186,41 +196,4 @@ for (i = 0; i < classTime.length; i++) {
         marker.addListener('click', function(){
             infoWindow.open(map, marker);
         });
-    }
-
-// Modals
-    // Get the Modal Element
-    var modal = document.getElementById('simpleModal');
-    // Get Modal Button
-    var modalBtn = document.getElementById('modalBtn');
-    // Get close button
-    var closeBtn = document.getElementsByClassName('closeBtn')[0];
-
-    // Listen for open Click
-    modalBtn.addEventListener('click', openModal);
-    // Function to open modal
-    function openModal() {
-        modal.style.display = 'block';
-    }
-
-    // Listen for open moddal
-    closeBtn.addEventListener('click', closeModal);
-    // Function to close modal
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    // Listen for open moddal
-    closeBtn.addEventListener('click', closeModal);
-    // Function to close modal
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    window.addEventListener('click',clickOutside);
-
-    function clickOutside(e){
-        if(e.target == modal){
-            modal.style.display = 'none';
-        } 
     }
