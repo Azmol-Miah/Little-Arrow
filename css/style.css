@@ -1,0 +1,244 @@
+/*Global*/
+.navbar {
+  background-color: #10a2c7;
+  padding: 0;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+li {
+  float: right;
+}
+
+
+
+body, .nav-link {
+  color: #fff !important; }
+
+.bg-primary {
+  background-color: #10a2c7b0 !important;
+  border: none; }
+
+.btn-outline-light:hover {
+  color: #10a2c7 !important;
+  cursor: pointer; }
+
+ .btn-outline-dark {
+      color: #10a2c7;
+      background-color: transparent;
+      background-image: none;
+      border-color: #10a2c7;
+ }
+
+  .btn-outline-dark:hover {
+      color: #fff;
+      background-color: #10a2c7;
+      border-color: #10a2c7;
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #10a2c7;
+    border-color: #10a2c7;
+}
+
+/* Nav */
+
+.nav-link:hover {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
+
+.active {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
+
+.transition {
+  transition: ease-out 30s;
+}
+
+/*Header*/
+#home {
+  background: linear-gradient(rgba(21, 22, 22, 0.45), rgba(21, 22, 22, 0.45)), url("../img/home.jpg") no-repeat center;
+  min-height: 100vh;
+  padding: 6em 0;
+  background-size: cover;
+ }
+
+
+.home-inner {
+ margin-top: 2em;
+}
+
+.fa{
+  color: #10a2c7;
+  background: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+/*About Us*/
+#about {
+  background-color:#10a2c7;
+}
+
+#qa {
+  background-color: #fff;
+  color: #000;
+}
+
+#qa h1 {
+  color:#10a2c7;
+}
+
+/*Newsletter*/
+#news-letter {
+  background-color: #10a2c7;
+}
+
+#qa .actives {
+  background-color: #10a2c7;
+  color: #fff;
+}
+
+/* Classes */
+#classes {
+  background: linear-gradient(rgba(21, 22, 22, 0.555), rgba(21, 22, 22, 0.589)), url("../img/qurantwo.jpg") no-repeat center;
+  min-height: 100vh;
+  background-size: cover;
+}
+#classes h1 {
+  color: #10a2c7;
+}
+
+#classes .box {
+  width: 100%;
+  height:auto;
+  color: #fff;
+  
+}
+
+#classes .box img {
+  width: 100%;
+  height:auto;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+#classes .box .box-content {
+  background-color: #10a2c7b0;
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+#classes .box-content h2 {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fff;
+}
+
+/* Qaida */
+#qaida {
+  background-color: #10a2c7 !important;
+}
+/* Contact */
+#contact {
+  color: #000;
+}
+
+#contact h1 {
+  color: #10a2c7b0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.color {
+  color: #add8e6;
+}
+
+/* Qaida */
+#alphabet {
+  padding: 6em 0;
+}
+
+#alphabet img {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1.2em;
+}
+
+#alphabet img:active {
+  border: 10px solid #10a2c765;
+  border-radius: 50%;
+}
+
+/* Modal */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background-color: #f4f4f4;
+  margin: 12.5% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1.5s;
+}
+
+.modal-header h2, .modal-header h3 {
+  margin: 0;
+}
+
+.modal-header{
+  background: coral;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+.modal-body{
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal-footer {
+  background: coral;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.closeBtn{
+  color: #fff;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: #000;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from{opacity: 0}
+  to{opacity: 1}
+}
