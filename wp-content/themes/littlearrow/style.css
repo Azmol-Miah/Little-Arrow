@@ -1,0 +1,211 @@
+
+/*Global*/
+.navbar {
+  background-color: #10a2c7;
+  padding: 0;
+  }
+  
+a {
+  text-decoration: none!important;
+  color: #10a2c7;
+}
+
+ul, li {
+  list-style: none!important;
+  padding:0!important;
+}
+body {
+  color: #fff; 
+}
+  
+.bg-primary {
+  background-color: #10a2c7b0 !important;
+  border: none; 
+}
+  
+.btn-outline-light:hover {
+  color: #10a2c7 !important;
+  cursor: pointer; 
+}
+  
+.btn-outline-dark {
+  color: #10a2c7;
+  background-color: transparent;
+  background-image: none;
+  border-color: #10a2c7;
+}
+  
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #10a2c7;
+  border-color: #10a2c7;
+}
+  
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #10a2c7;
+  border-color: #10a2c7;
+}
+
+/* Nav */
+.nav-link {
+  color: #fff !important; 
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
+  
+.active {
+  background-color: #fff;
+  color: #10a2c7 !important;
+  border: 0;
+}
+  
+.transition {
+  transition: ease-out 30s;
+}
+  
+/*Header*/
+#showcase {
+  min-height: 100vh;
+  padding: 5em 0;
+  background-size: cover;
+}
+  
+  
+.showcase-inner {
+  margin-top: 1em;
+}
+  
+.fa{
+  color: #10a2c7;
+  background: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+  
+/*About Us*/
+#about {
+  background-color:#10a2c7;
+}
+
+/* About Page */
+#about-content p {
+  color: #000 !important;
+}
+
+/* qa */
+#qa {
+  background-color: #fff;
+  color: #000;
+}
+  
+#qa h1 {
+  color:#10a2c7;
+}
+
+#qa .post-preview a:first-child  {
+  color: #000 !important;
+}
+
+#qa .post-preview a:hover{
+  color:#10a2c7 !important;
+}
+
+#qa .post-preview>.post-meta{
+  font-style: italic;
+  color: #868e96
+}
+
+#blog-header {
+  background-color: #10a2c7 !important;
+  color: #fff !important;
+}
+
+header#blog-header .container .text-center .p-5 .post-meta a {
+  color: #000 !important;
+}
+
+#blog .side-bar ul li {
+  list-style: none;
+}
+
+/*Newsletter*/
+#news-letter {
+  background-color: #10a2c7;
+}
+  
+  
+/* Classes */
+#classes {
+  min-height: 100vh;
+  background-size: cover;
+}
+
+#classes h1 {
+  color: #10a2c7;
+}
+  
+#classes .box {
+  width: 100%;
+  height:auto;
+  color: #fff;  
+}
+  
+#classes .box img {
+  width: 100%;
+  height:auto;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+  
+#classes .box .box-content {
+  background-color: #10a2c7b0;
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+  
+#classes .box-content h2 {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fff;
+}
+  
+/* Qaida */
+#qaida {
+  background-color: #10a2c7 !important;
+}
+  
+/* Contact */
+#contact {
+  color: #000;
+}
+  
+#contact h1 {
+  color: #10a2c7b0;
+}
+  
+#map {
+  height: 400px;
+  width: 100%;
+}
+    
+.color {
+  color: #add8e6;
+}
+  
+/* Qaida */
+#alphabet {
+  padding: 6em 0;
+}
+  
+#alphabet img {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+}
